@@ -1,61 +1,46 @@
-menu = """
-[d] Depositar
-[s] Sacar
-[e] Extrato
-[q] Sair
+# 👋 Olá, eu sou Murilo!
 
-=> """
+## 😄 Sobre mim
 
-saldo = 0
-limite = 500
-extrato = ""
-numero_saques = 0
-LIMITE_SAQUES = 3
+- 🎂 Idade: 23 anos
+- 📍 Localização: São Paulo, SP
+- 💬 Idiomas: Inglês (intermediário)
+- 🎓 Formação: Bacharel em Sistemas de informação
+- 📚 Interesses: análise de dados, business intelligence e IA
 
-while True:
+## 💼 Experiência Profissional
 
-    opcao = input(menu)
+### 🏢 [DXC Technology]
+- Cargo: Sr Analyst Business Process Solutions
+- Período: 04/2021 - atualmente 
 
-    if opcao == "d":
-        valor = float(input("Informe o valor do depósito: "))
-   
-        if valor > 0:
-            saldo += valor
-            extrato += f"Depósito: R$ {valor:.2f}\n"
-            print(f"\nSaldo: R$ {saldo:.2f}")
-        else:
-            print("Operação falhou! O valor informado é inválido.")
+  - Atuo com foco na análise e otimização de processos de negócios, sempre buscando melhorar a experiência do cliente por meio de soluções mais eficientes e estratégicas
 
-    elif opcao == "s":
-        if numero_saques >= LIMITE_SAQUES:
-            print("Operação falhou! Número máximo de saques excedido.")
-        else:
-            valor = float(input("Informe o valor do saque: "))
+  - SQL, Python e Java
 
-            excedeu_saldo = valor > saldo
-            excedeu_limite = valor > limite
 
-            if excedeu_saldo:
-                print("Operação falhou! Você não tem saldo suficiente.")
-            elif excedeu_limite:
-                print("Operação falhou! O valor do saque excede o limite.")
-            elif valor > 0:
-                saldo -= valor
-                extrato += f"Saque:    R$ {valor:.2f}\n"
-                numero_saques += 1
-                print(f"\nSaldo: R$ {saldo:.2f}")
-            else:
-                print("Operação falhou! O valor informado é inválido.")
 
-    elif opcao == "e":
-        print("\n================ EXTRATO ================")
-        print("Não foram realizadas movimentações." if not extrato else extrato)
-        print(f"\nSaldo: R$ {saldo:.2f}")
-        print("========================================")
+## 💻 Habilidades Técnicas
 
-    elif opcao == "q":
-        print("\nSessão encerrada. Obrigado por utilizar nosso sistema bancário!")
-        break
+- Linguagens de Programação: SQL, Python, Java e R.
+- Bibliotecas & Ferramentas: Pandas, Playwright e Power Platform.
+- Banco de Dados: MongoDB, Oracle e MySQL.
+- Outras: RPA e ETL.
 
-    else:
-        print("Operação inválida, por favor selecione novamente a operação desejada.")
+## 🌱 Atualmente aprendendo
+
+- aprimorando meu conhecimento em Dados.
+
+## 📈 GitHub Stats 
+
+![Murilo-Vagner](https://github-readme-stats.vercel.app/api?username=Murilo-Vagner&show_icons=true&theme=dracula)
+
+## 📫 Contato
+
+- 📧 E-mail: ilovagner@outlook.com
+- 💼 LinkedIn: https://www.linkedin.com/in/murilo-vagner-b2757a19b/
+
+
+## 📊 Estatísticas do GitHub
+
+![Linguagens](https://github-readme-stats.vercel.app/api/top-langs/?username=Murilo-Vagner&layout=compact&theme=dracula)
